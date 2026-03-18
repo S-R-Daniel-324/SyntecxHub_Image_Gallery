@@ -4,7 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Interactive Image Gallery</title>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -25,41 +28,45 @@
 <section class="section" data-category="nature">
   <h2>Nature</h2>
   <div class="gallery">
-    <div class="item"><img src="images/nature2.jpg" alt="Beautiful nature scene" loading="lazy" decoding="async"></div>
-    <div class="item"><img src="images/tree.jpg" alt="Majestic tree" loading="lazy" decoding="async"></div>
-    <div class="item"><img src="images/nature3.jpg" alt="Nature landscape" loading="lazy" decoding="async"></div>
-    <div class="item"><img src="images/nature.jpg" alt="Natural beauty" loading="lazy" decoding="async"></div>
-    <div class="item"><img src="images/nature4.jpg" alt="Nature scenery" loading="lazy" decoding="async"></div>
-    <div class="item"><img src="images/mountain.jpg" alt="Mountain view" loading="lazy" decoding="async"></div>
-    <div class="item"><img src="images/jarna.jpg" alt="Jarna landscape" loading="lazy" decoding="async"></div>
+   
+    <div class="item"><img src="images/nature2.jpg" alt="Beautiful nature scene" width="400" height="300" loading="lazy" decoding="async"></div>
+    <div class="item"><img src="images/tree.webp" alt="Majestic tree" width="400" height="300" loading="lazy" decoding="async"></div>
+    <div class="item"><img src="images/nature3.jpg" alt="Nature landscape" width="400" height="300" loading="lazy" decoding="async"></div>
+    <div class="item"><img src="images/nature.jpg" alt="Natural beauty" width="400" height="300" loading="lazy" decoding="async"></div>
+    <div class="item"><img src="images/nature4.jpg" alt="Nature scenery" width="400" height="300" loading="lazy" decoding="async"></div>
+    <div class="item"><img src="images/mountain.jpg" alt="Mountain view" width="400" height="300" loading="lazy" decoding="async"></div>
+    <div class="item"><img src="images/jarna.webp" alt="Jarna landscape" width="400" height="300" loading="lazy" decoding="async"></div>
   </div>
 </section>
 
 <section class="section" data-category="city">
   <h2>City</h2>
   <div class="gallery">
-    <div class="item"><img src="images/city1.jpg" alt="City skyline" loading="lazy" decoding="async"></div>
-    <div class="item"><img src="images/city2.jpg" alt="Urban scene" loading="lazy" decoding="async"></div>
-    <div class="item"><img src="images/city3.jpg" alt="City architecture" loading="lazy" decoding="async"></div>
-    <div class="item"><img src="images/city4.jpg" alt="City lights" loading="lazy" decoding="async"></div>
-    <div class="item"><img src="images/city5.jpg" alt="Metropolitan view" loading="lazy" decoding="async"></div>
+    <div class="item"><img src="images/city1.jpg" alt="City skyline" width="400" height="300" loading="lazy" decoding="async"></div>
+    <div class="item"><img src="images/city2.jpg" alt="Urban scene" width="400" height="300" loading="lazy" decoding="async"></div>
+    <div class="item"><img src="images/city3.webp" alt="City architecture" width="400" height="300" loading="lazy" decoding="async"></div>
+    <div class="item"><img src="images/city4.jpg" alt="City lights" width="400" height="300" loading="lazy" decoding="async"></div>
+    <div class="item"><img src="images/city5.jpg" alt="Metropolitan view" width="400" height="300" loading="lazy" decoding="async"></div>
   </div>
 </section>
 
 <section class="section" data-category="animals">
   <h2>Animals</h2>
   <div class="gallery">
-    <div class="item"><img src="images/animal1.jpg" alt="Wild animal" loading="lazy" decoding="async"></div>
-    <div class="item"><img src="images/animal2.jpg" alt="Animal portrait" loading="lazy" decoding="async"></div>
-    <div class="item"><img src="images/animal3.jpg" alt="Animal in nature" loading="lazy" decoding="async"></div>
-    <div class="item"><img src="images/animal4.jpg" alt="Animal close-up" loading="lazy" decoding="async"></div>
-    <div class="item"><img src="images/animal5.jpg" alt="Animal wildlife" loading="lazy" decoding="async"></div>
+    <div class="item"><img src="images/animal1.jpg" alt="Wild animal" width="400" height="300" loading="lazy" decoding="async"></div>
+    <div class="item"><img src="images/animal2.jpg" alt="Animal portrait" width="400" height="300" loading="lazy" decoding="async"></div>
+    <div class="item"><img src="images/animal3.jpg" alt="Animal in nature" width="400" height="300" loading="lazy" decoding="async"></div>
+    <div class="item"><img src="images/animal4.jpg" alt="Animal close-up" width="400" height="300" loading="lazy" decoding="async"></div>
+    <div class="item"><img src="images/animal5.jpg" alt="Animal wildlife" width="400" height="300" loading="lazy" decoding="async"></div>
   </div>
 </section>
 
+
+<p class="no-results" id="no-results">No photos match your search.</p>
+
 <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true">
   <span class="close" role="button" aria-label="Close lightbox" tabindex="0">×</span>
-  <img id="lightbox-img" alt="Enlarged gallery image">
+  <img id="lightbox-img" alt="Enlarged gallery image" decoding="async">
   <div class="nav">
     <button id="prev" aria-label="Previous image">❮</button>
     <button id="next" aria-label="Next image">❯</button>
